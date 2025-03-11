@@ -48,7 +48,7 @@ client volume:
 ![image](https://github.com/user-attachments/assets/561ea215-e5e9-4e11-9550-4d03f31d27d2)
 
 ### DeepNote [1]
-Note: If you want to run kafka 3.9.0, you need to only add controller advertised.listener, normally we're not using before 3.9.0 but kafka alreay request in 3.9.0 and future.
+Note: If you want to run Kafka 3.9.0, you need to add controller.advertised.listener. Before Kafka 3.9.0, this was not required, but starting from version 3.9.0 and in future releases, Kafka explicitly requires it.
 
 ### Thanks for Helping and Contributing
 ## `Can Sevilmis & Bunyamin Onum & B. Can Sari`
