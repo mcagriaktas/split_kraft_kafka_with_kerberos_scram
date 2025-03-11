@@ -51,4 +51,4 @@ client volume:
 Note: If you want to run kafka 3.9.0, you need to only add controller advertised.listener, normally we're not using before 3.9.0 but kafka alreay request in 3.9.0 and future.
 
 ### Thanks for Helping and Contributing
-`Can Sevilmis & Bunyamin Onum & B. Can Sari`
+## `Can Sevilmis & Bunyamin Onum & B. Can Sari`
