@@ -2,7 +2,7 @@
 
 In this demo, the main aim is to implement a split KRaft Kafka Cluster with separate controller and broker components. When authentication is added to the `*.properties` files, the split architecture can cause confusion, which is why I've set up `GSSAPI authentication` between the controller and broker. Additionally, a client container is included that uses both `Kerberos and SCRAM authentication` with the broker. For a deeper understanding of configuration, properties files, and `Kerberos/SCRAM authentication`, please refer to the accompanying `medium article`.
 
-main them pic.
+![1_TPrhwQ-80LxEDPLlYlXg7g](https://github.com/user-attachments/assets/15c2c6e3-e062-40f1-a360-fec7be94f34e)
 
 ### 🛠️ Environment Setup
 | Software          | Description                                    | Version                             | UI - Ports      |
@@ -36,6 +36,8 @@ When you build and start the project, you can `ONLY USE CLIENT` container, ofc. 
 
 You can simply use `./add_users.sh` for create topic, consumer-group, scrum user, keytabs and more. When you create keytabs you'll see the keytabs in the `configs/keytabs/client-keytabs` because these volume path is partner with kerberos and client container, in this reason when you create new keytab, the keytab will be in the path. 
 
+![1_S0SxL1QrtOuspB86ZKeREQ](https://github.com/user-attachments/assets/a0a63a7e-e1ec-4384-a843-10e9413dce53)
+
 Also when you want to compile a jar or write a new scrip, you can put your file in `/configs/client/scala or python`
 
 client volume:
@@ -43,13 +45,10 @@ client volume:
       - ./configs/client:/mnt/home
 ```
 
-keytab picture
-
+![image](https://github.com/user-attachments/assets/561ea215-e5e9-4e11-9550-4d03f31d27d2)
 
 ### DeepNote [1]
 Note: If you want to run kafka 3.9.0, you need to only add controller advertised.listener, normally we're not using before 3.9.0 but kafka alreay request in 3.9.0 and future.
 
 ### Thanks for Helping and Contributing
-1. CanSevilmis
-2. Bunyaminonum
-3. Cansari
+`Can Sevilmis & Bunyamin Onum & B. Can Sari`
