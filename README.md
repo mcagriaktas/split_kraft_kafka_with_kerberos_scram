@@ -10,7 +10,7 @@ In this demo, the main aim is to implement a split KRaft Kafka Cluster with sepa
 | **WSL**           | Windows Subsystem for Linux environment        | Ubuntu 22.04 (Distro 2)             |            |
 | **Docker**        | Containerization platform                      | Docker version 27.2.0               |            |
 | **Docker Compose**| Tool for defining and running multi-container Docker applications | v2.29.2-desktop.2 |            |
-| **Apache Kafka**  | Distributed event streaming platform           | 3.8.0                               | 9092/19092 (broker), 9093 (controller) |
+| **Apache Kafka**  | Distributed event streaming platform           | 3.8.0                               | 9092 (broker), 9093 (controller) |
 | **Kerberos**      | Network authentication protocol service        | MIT Kerberos version 1.19.2-2ubuntu0.5 | 88/udp (KDC), 749/tcp (kadmin) |
 | **Python**        | Programming language                           | 3.9.2                               |            |
 | **Scala**         | Programming language                           | 2.10.20                             |            |
