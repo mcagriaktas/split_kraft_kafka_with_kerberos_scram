@@ -1,9 +1,7 @@
 FROM openjdk:17.0.1-jdk-slim
 
-# Create kafka user and group properly
 RUN groupadd -r kafka && useradd -r -g kafka kafka
 
-# Set environment variables
 ENV KAFKA_OPTS="--enable-native-access=ALL-UNNAMED -Djava.security.auth.login.config=/opt/kafka/config/kraft/broker_server_jaas.conf -Djava.security.krb5.conf=/etc/krb5.conf"
 ENV KAFKA_HEAP_OPTS="-Xms10G -Xmx10G"
 
