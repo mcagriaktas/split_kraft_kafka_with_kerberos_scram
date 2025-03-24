@@ -15,6 +15,8 @@ namespace KafkaKeytabProducer
             string topicName = "test-topic";
             string keytabPath = "/mnt/keytabs/client-client.keytab";
             string principal = "client/client@EXAMPLE.COM";
+            string sslCaLocation = "/mnt/home/dotnet/client.pem";
+            string saslKerberosServiceName = "kafka";
 
             // Setup Kerberos environment
             Environment.SetEnvironmentVariable("KRB5_CLIENT_KTNAME", keytabPath);
@@ -27,10 +29,10 @@ namespace KafkaKeytabProducer
                     BootstrapServers = bootstrapServers,
                     SecurityProtocol = SecurityProtocol.SaslSsl,
                     SaslMechanism = SaslMechanism.Gssapi,
-                    SaslKerberosServiceName = "kafka",
+                    SaslKerberosServiceName = saslKerberosServiceName,
                     SaslKerberosPrincipal = principal,
                     SaslKerberosKeytab = keytabPath,
-                    SslCaLocation = "/mnt/home/_net/client.pem",
+                    SslCaLocation = sslCaLocation,
                     EnableDeliveryReports = true
                 };
 
