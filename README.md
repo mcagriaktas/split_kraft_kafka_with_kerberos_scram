@@ -23,17 +23,12 @@ Medium Article: https://medium.com/@mucagriaktas/securing-a-split-kraft-kafka-ar
 git clone https://github.com/mcagriaktas/split_kraft_kafka_with_kerberos_scram.git
 ```
 
-2. Create the Docker network:
-```bash
-docker network create --subnet=172.80.0.0/16 dahbest
-```
-
-3. Start `init-docker-compose.yml` for deploying logs, metadatas and configs files:
+2. Start `init-docker-compose.yml` for deploying logs, metadatas and configs files:
 ```bash
 ./init-docker-compose.yml
 ```
 
-4. Build the images:
+3. Build the images:
 ```bash
 docker-compose up -d --build
 ```
