@@ -28,12 +28,12 @@ git clone https://github.com/mcagriaktas/split_kraft_kafka_with_kerberos_scram.g
 docker network create --subnet=172.80.0.0/16 dahbest
 ```
 
-2. Start `init-docker-compose.yml` for deploying logs, metadatas and configs files:
+3. Start `init-docker-compose.yml` for deploying logs, metadatas and configs files:
 ```bash
 ./init-docker-compose.yml
 ```
 
-3. Build the images:
+4. Build the images:
 ```bash
 docker-compose up -d --build
 ```
